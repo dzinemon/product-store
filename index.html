@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My fancy store</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
+    />
+  </head>
+
+  <body>
+    <section class="hero is-primary">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            My fancy store
+          </h1>
+          <h2 class="subtitle">
+            make a selection for today
+          </h2>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container is-widescreen">
+        <div class="columns">
+          <div class="column is-3-tablet">
+            <aside class="menu">
+                  <div class="field">
+                    <label class="label is-size-7-mobile is-size-6-tablet">Select products by category</label>
+                    <div class="control">
+                      <div class="select" style="width: 100%;">
+                        <select
+                          style="width: 100%; padding-right: 0;"
+                          id="product-select"
+                        >
+                          <option value="all">All</option>
+                          <option value="utensils">Meat products</option>
+                          <option value="fish">Fish products</option>
+                          <option value="seedling">Vegatables</option>
+                        </select>
+                      </div>
+                    </div>
+                    <p class="help">Select product category</p>
+                  </div>
+                  <div class="field">
+                    <label class="label is-size-7-mobile is-size-6-tablet">Enter product name</label>
+                    <div class="control">
+                      <input
+                        id="product-input"
+                        class="input"
+                        type="text"
+                        placeholder="Text input"
+                      />
+                    </div>
+                    <p class="help">Type product name like <code>fish</code></p>
+                  </div>
+                  <div class="field">
+                    <div class="block" id="searchWrap"></div>
+                  </div>
+              </div>
+            </aside>
+          </div>
+          <div class="column">
+            <div class="columns is-multiline" id="columns"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Something went wrong</p>
+          <button class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+          <p>We cannot handle your request. Requested items is out of stock.</p>
+        </section>
+      </div>
+    </div>
+
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+    ></script>
+    <script src="/product-store/script.js"></script>
+  </body>
+</html>

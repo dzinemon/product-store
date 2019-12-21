@@ -1,0 +1,50 @@
+[
+  {
+    "price": 9.80,
+    "id": "danger",
+    "title": "Fried bacon",
+    "type": "utensils"
+  },
+  {
+    "price": 5.50,
+    "id": "warning",
+    "title": "Jerky beef slices",
+    "type": "utensils"
+  },
+  {
+    "price": 14.60,
+    "id": "warning",
+    "title": "Fresh fish",
+    "type": "fish"
+  },
+  {
+    "price": 2.40,
+    "id": "warning",
+    "title": "Pork slices",
+    "type": "utensils"
+  },
+  {
+    "price": 18.90,
+    "id": "danger",
+    "title": "Fried fish",
+    "type": "fish"
+  },
+  {
+    "price": 7.40,
+    "id": "primary",
+    "title": "Fresh vegatables",
+    "type": "seedling"
+  },
+  {
+    "price": 6.50,
+    "id": "primary",
+    "title": "Boiled vegatables",
+    "type": "seedling"
+  },
+  {
+    "price": 8.30,
+    "id": "primary",
+    "title": "Fried vegatables",
+    "type": "seedling"
+  }
+]
